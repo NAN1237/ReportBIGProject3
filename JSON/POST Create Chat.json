@@ -1,0 +1,275 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "message",
+        "data"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": "",
+            "title": "The message Schema",
+            "examples": [
+                "Create message successful"
+            ]
+        },
+        "data": {
+            "type": "object",
+            "default": {},
+            "title": "The data Schema",
+            "required": [
+                "_id",
+                "content",
+                "creator",
+                "isDeleted",
+                "createdAt",
+                "updatedAt",
+                "__v",
+                "type"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "636f1658d7f0fba1a52bbfff"
+                    ]
+                },
+                "content": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The content Schema",
+                    "examples": [
+                        "\u003cp\u003eIni pesan baru katalon yaaa\u003c/p\u003e"
+                    ]
+                },
+                "creator": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The creator Schema",
+                    "required": [
+                        "_id",
+                        "googleId",
+                        "email",
+                        "fullName",
+                        "photoUrl",
+                        "bio",
+                        "status",
+                        "defaultCompany",
+                        "companies",
+                        "createdAt",
+                        "updatedAt",
+                        "__v"
+                    ],
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The _id Schema",
+                            "examples": [
+                                "635000bc2e20d88b28b61c00"
+                            ]
+                        },
+                        "googleId": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The googleId Schema",
+                            "examples": [
+                                "103333607480682677529"
+                            ]
+                        },
+                        "email": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The email Schema",
+                            "examples": [
+                                "dwimahendrananda@gmail.com"
+                            ]
+                        },
+                        "fullName": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The fullName Schema",
+                            "examples": [
+                                "Nanda Dwi Mahendra"
+                            ]
+                        },
+                        "photoUrl": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The photoUrl Schema",
+                            "examples": [
+                                "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            ]
+                        },
+                        "bio": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The bio Schema",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "status": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The status Schema",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "defaultCompany": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The defaultCompany Schema",
+                            "examples": [
+                                "636e5a49f0d9372bfbd4604d"
+                            ]
+                        },
+                        "companies": {
+                            "type": "array",
+                            "default": [],
+                            "title": "The companies Schema",
+                            "items": {},
+                            "examples": [
+                                []
+                            ]
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The createdAt Schema",
+                            "examples": [
+                                "2022-10-19T13:50:52.856Z"
+                            ]
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The updatedAt Schema",
+                            "examples": [
+                                "2022-11-11T14:20:57.090Z"
+                            ]
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0,
+                            "title": "The __v Schema",
+                            "examples": [
+                                0
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "googleId": "103333607480682677529",
+                        "email": "dwimahendrananda@gmail.com",
+                        "fullName": "Nanda Dwi Mahendra",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                        "bio": "",
+                        "status": "",
+                        "defaultCompany": "636e5a49f0d9372bfbd4604d",
+                        "companies": [],
+                        "createdAt": "2022-10-19T13:50:52.856Z",
+                        "updatedAt": "2022-11-11T14:20:57.090Z",
+                        "__v": 0
+                    }]
+                },
+                "isDeleted": {
+                    "type": "boolean",
+                    "default": false,
+                    "title": "The isDeleted Schema",
+                    "examples": [
+                        false
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-12T03:43:20.147Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-12T03:43:20.147Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                },
+                "type": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The type Schema",
+                    "examples": [
+                        "message"
+                    ]
+                }
+            },
+            "examples": [{
+                "_id": "636f1658d7f0fba1a52bbfff",
+                "content": "\u003cp\u003eIni pesan baru katalon yaaa\u003c/p\u003e",
+                "creator": {
+                    "_id": "635000bc2e20d88b28b61c00",
+                    "googleId": "103333607480682677529",
+                    "email": "dwimahendrananda@gmail.com",
+                    "fullName": "Nanda Dwi Mahendra",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                    "bio": "",
+                    "status": "",
+                    "defaultCompany": "636e5a49f0d9372bfbd4604d",
+                    "companies": [],
+                    "createdAt": "2022-10-19T13:50:52.856Z",
+                    "updatedAt": "2022-11-11T14:20:57.090Z",
+                    "__v": 0
+                },
+                "isDeleted": false,
+                "createdAt": "2022-11-12T03:43:20.147Z",
+                "updatedAt": "2022-11-12T03:43:20.147Z",
+                "__v": 0,
+                "type": "message"
+            }]
+        }
+    },
+    "examples": [{
+        "message": "Create message successful",
+        "data": {
+            "_id": "636f1658d7f0fba1a52bbfff",
+            "content": "\u003cp\u003eIni pesan baru katalon yaaa\u003c/p\u003e",
+            "creator": {
+                "_id": "635000bc2e20d88b28b61c00",
+                "googleId": "103333607480682677529",
+                "email": "dwimahendrananda@gmail.com",
+                "fullName": "Nanda Dwi Mahendra",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                "bio": "",
+                "status": "",
+                "defaultCompany": "636e5a49f0d9372bfbd4604d",
+                "companies": [],
+                "createdAt": "2022-10-19T13:50:52.856Z",
+                "updatedAt": "2022-11-11T14:20:57.090Z",
+                "__v": 0
+            },
+            "isDeleted": false,
+            "createdAt": "2022-11-12T03:43:20.147Z",
+            "updatedAt": "2022-11-12T03:43:20.147Z",
+            "__v": 0,
+            "type": "message"
+        }
+    }]
+}

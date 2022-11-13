@@ -1,0 +1,916 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "teams"
+    ],
+    "properties": {
+        "teams": {
+            "type": "array",
+            "default": [],
+            "title": "The teams Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "_id",
+                    "name",
+                    "desc",
+                    "members",
+                    "boards",
+                    "type",
+                    "archived",
+                    "createdAt",
+                    "updatedAt",
+                    "__v",
+                    "blast",
+                    "bucket",
+                    "checkIn",
+                    "groupChat",
+                    "schedule"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": "string",
+                        "title": "The _id Schema",
+                        "examples": [
+                            "635367ba699bc04871c0f855",
+                            "6354e0142e20d88b28be44a5",
+                            "636532e459854a1a1b37d133",
+                            "636533f23783bc1a0c2d9cab",
+                            "636534163783bc1a0c2d9d35"
+                        ]
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "The name Schema",
+                        "examples": [
+                            "Kelas A",
+                            "CLASS A",
+                            "Nanda",
+                            "Malaysia"
+                        ]
+                    },
+                    "desc": {
+                        "type": "string",
+                        "title": "The desc Schema",
+                        "examples": [
+                            "",
+                            "Saya Coba Nih"
+                        ]
+                    },
+                    "members": {
+                        "type": "array",
+                        "title": "The members Schema",
+                        "items": {
+                            "type": "object",
+                            "title": "A Schema",
+                            "required": [
+                                "_id",
+                                "photoUrl",
+                                "bio",
+                                "status"
+                            ],
+                            "properties": {
+                                "_id": {
+                                    "type": "string",
+                                    "title": "The _id Schema",
+                                    "examples": [
+                                        "635001379411977405a23eda",
+                                        "62f63f5d93a55ccbaaaee181",
+                                        "62f652fa98ae1e904837debf",
+                                        "62f60e2ce646dee8e8cd5a65",
+                                        "6214988e48c88f6184e24c76",
+                                        "635000bc2e20d88b28b61c00",
+                                        "62f5f90d98ae1e90483795af"
+                                    ]
+                                },
+                                "photoUrl": {
+                                    "type": "string",
+                                    "title": "The photoUrl Schema",
+                                    "examples": [
+                                        "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c",
+                                        "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c",
+                                        "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c",
+                                        "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c",
+                                        "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c",
+                                        "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                                        "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c"
+                                    ]
+                                },
+                                "bio": {
+                                    "type": "string",
+                                    "title": "The bio Schema",
+                                    "examples": [
+                                        "loremipsum dolorsitssssss",
+                                        "sudah di takdirkan maha pencipta",
+                                        "",
+                                        "Mentor"
+                                    ]
+                                },
+                                "status": {
+                                    "type": "string",
+                                    "title": "The status Schema",
+                                    "examples": [
+                                        "Software Engineersssss",
+                                        "single selamanya",
+                                        "",
+                                        "Test Engineer"
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "_id": "635001379411977405a23eda",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c",
+                                "bio": "loremipsum dolorsitssssss",
+                                "status": "Software Engineersssss"
+                            },
+                            {
+                                "_id": "62f63f5d93a55ccbaaaee181",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c",
+                                "bio": "sudah di takdirkan maha pencipta",
+                                "status": "single selamanya"
+                            },
+                            {
+                                "_id": "62f652fa98ae1e904837debf",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "62f60e2ce646dee8e8cd5a65",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "6214988e48c88f6184e24c76",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c",
+                                "bio": "Mentor",
+                                "status": "Test Engineer"
+                            },
+                            {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "62f5f90d98ae1e90483795af",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }]
+                        },
+                        "examples": [
+                            [{
+                                "_id": "635001379411977405a23eda",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c",
+                                "bio": "loremipsum dolorsitssssss",
+                                "status": "Software Engineersssss"
+                            },
+                            {
+                                "_id": "62f63f5d93a55ccbaaaee181",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c",
+                                "bio": "sudah di takdirkan maha pencipta",
+                                "status": "single selamanya"
+                            },
+                            {
+                                "_id": "62f652fa98ae1e904837debf",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "62f60e2ce646dee8e8cd5a65",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "6214988e48c88f6184e24c76",
+                                "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c",
+                                "bio": "Mentor",
+                                "status": "Test Engineer"
+                            },
+                            {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                                "bio": "",
+                                "status": ""
+                            },
+                            {
+                                "_id": "62f5f90d98ae1e90483795af",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }],
+                            [{
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }],
+                            [{
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }],
+                            [{
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }],
+                            [{
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                                "bio": "",
+                                "status": ""
+                            }]
+                        ]
+                    },
+                    "boards": {
+                        "type": "array",
+                        "title": "The boards Schema",
+                        "items": {
+                            "type": "string",
+                            "title": "A Schema",
+                            "examples": [
+                                "635367ba699bc04871c0f858",
+                                "6354e0142e20d88b28be44a8",
+                                "636532e459854a1a1b37d1a6",
+                                "636533f23783bc1a0c2d9d1e",
+                                "636534163783bc1a0c2d9da8"
+                            ]
+                        },
+                        "examples": [
+                            [
+                                "635367ba699bc04871c0f858"],
+                            [
+                                "6354e0142e20d88b28be44a8"],
+                            [
+                                "636532e459854a1a1b37d1a6"],
+                            [
+                                "636533f23783bc1a0c2d9d1e"],
+                            [
+                                "636534163783bc1a0c2d9da8"]
+                        ]
+                    },
+                    "type": {
+                        "type": "string",
+                        "title": "The type Schema",
+                        "examples": [
+                            "team"
+                        ]
+                    },
+                    "archived": {
+                        "type": "object",
+                        "title": "The archived Schema",
+                        "required": [
+                            "status"
+                        ],
+                        "properties": {
+                            "status": {
+                                "type": "boolean",
+                                "title": "The status Schema",
+                                "examples": [
+                                    false
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "status": false
+                        },
+                        {
+                            "status": false
+                        },
+                        {
+                            "status": false
+                        },
+                        {
+                            "status": false
+                        },
+                        {
+                            "status": false
+                        }]
+                    },
+                    "createdAt": {
+                        "type": "string",
+                        "title": "The createdAt Schema",
+                        "examples": [
+                            "2022-10-22T03:47:06.238Z",
+                            "2022-10-23T06:32:52.046Z",
+                            "2022-11-04T15:42:28.720Z",
+                            "2022-11-04T15:46:58.798Z",
+                            "2022-11-04T15:47:34.057Z"
+                        ]
+                    },
+                    "updatedAt": {
+                        "type": "string",
+                        "title": "The updatedAt Schema",
+                        "examples": [
+                            "2022-10-25T09:44:01.481Z",
+                            "2022-10-23T06:32:52.081Z",
+                            "2022-11-04T15:42:28.855Z",
+                            "2022-11-04T15:46:58.825Z",
+                            "2022-11-04T15:47:34.094Z"
+                        ]
+                    },
+                    "__v": {
+                        "type": "integer",
+                        "title": "The __v Schema",
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "blast": {
+                        "type": "string",
+                        "title": "The blast Schema",
+                        "examples": [
+                            "635367ba699bc04871c0f85a",
+                            "6354e0142e20d88b28be44aa",
+                            "636532e459854a1a1b37d1a8",
+                            "636533f23783bc1a0c2d9d20",
+                            "636534163783bc1a0c2d9daa"
+                        ]
+                    },
+                    "bucket": {
+                        "type": "string",
+                        "title": "The bucket Schema",
+                        "examples": [
+                            "635367ba699bc04871c0f85d",
+                            "6354e0142e20d88b28be44ad",
+                            "636532e459854a1a1b37d1ab",
+                            "636533f23783bc1a0c2d9d23",
+                            "636534163783bc1a0c2d9dad"
+                        ]
+                    },
+                    "checkIn": {
+                        "type": "string",
+                        "title": "The checkIn Schema",
+                        "examples": [
+                            "635367ba699bc04871c0f85b",
+                            "6354e0142e20d88b28be44ab",
+                            "636532e459854a1a1b37d1a9",
+                            "636533f23783bc1a0c2d9d21",
+                            "636534163783bc1a0c2d9dab"
+                        ]
+                    },
+                    "groupChat": {
+                        "type": "string",
+                        "title": "The groupChat Schema",
+                        "examples": [
+                            "635367ba699bc04871c0f859",
+                            "6354e0142e20d88b28be44a9",
+                            "636532e459854a1a1b37d1a7",
+                            "636533f23783bc1a0c2d9d1f",
+                            "636534163783bc1a0c2d9da9"
+                        ]
+                    },
+                    "schedule": {
+                        "type": "string",
+                        "title": "The schedule Schema",
+                        "examples": [
+                            "635367ba699bc04871c0f85c",
+                            "6354e0142e20d88b28be44ac",
+                            "636532e459854a1a1b37d1aa",
+                            "636533f23783bc1a0c2d9d22",
+                            "636534163783bc1a0c2d9dac"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "_id": "635367ba699bc04871c0f855",
+                    "name": "Kelas A",
+                    "desc": "",
+                    "members": [{
+                        "_id": "635001379411977405a23eda",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c",
+                        "bio": "loremipsum dolorsitssssss",
+                        "status": "Software Engineersssss"
+                    },
+                    {
+                        "_id": "62f63f5d93a55ccbaaaee181",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c",
+                        "bio": "sudah di takdirkan maha pencipta",
+                        "status": "single selamanya"
+                    },
+                    {
+                        "_id": "62f652fa98ae1e904837debf",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c",
+                        "bio": "",
+                        "status": ""
+                    },
+                    {
+                        "_id": "62f60e2ce646dee8e8cd5a65",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c",
+                        "bio": "",
+                        "status": ""
+                    },
+                    {
+                        "_id": "6214988e48c88f6184e24c76",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c",
+                        "bio": "Mentor",
+                        "status": "Test Engineer"
+                    },
+                    {
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                        "bio": "",
+                        "status": ""
+                    },
+                    {
+                        "_id": "62f5f90d98ae1e90483795af",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "635367ba699bc04871c0f858"
+                    ],
+                    "type": "team",
+                    "archived": {
+                        "status": false
+                    },
+                    "createdAt": "2022-10-22T03:47:06.238Z",
+                    "updatedAt": "2022-10-25T09:44:01.481Z",
+                    "__v": 0,
+                    "blast": "635367ba699bc04871c0f85a",
+                    "bucket": "635367ba699bc04871c0f85d",
+                    "checkIn": "635367ba699bc04871c0f85b",
+                    "groupChat": "635367ba699bc04871c0f859",
+                    "schedule": "635367ba699bc04871c0f85c"
+                },
+                {
+                    "_id": "6354e0142e20d88b28be44a5",
+                    "name": "CLASS A",
+                    "desc": "",
+                    "members": [{
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "6354e0142e20d88b28be44a8"
+                    ],
+                    "type": "team",
+                    "archived": {
+                        "status": false
+                    },
+                    "createdAt": "2022-10-23T06:32:52.046Z",
+                    "updatedAt": "2022-10-23T06:32:52.081Z",
+                    "__v": 0,
+                    "blast": "6354e0142e20d88b28be44aa",
+                    "bucket": "6354e0142e20d88b28be44ad",
+                    "checkIn": "6354e0142e20d88b28be44ab",
+                    "groupChat": "6354e0142e20d88b28be44a9",
+                    "schedule": "6354e0142e20d88b28be44ac"
+                },
+                {
+                    "_id": "636532e459854a1a1b37d133",
+                    "name": "Nanda",
+                    "desc": "Saya Coba Nih",
+                    "members": [{
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636532e459854a1a1b37d1a6"
+                    ],
+                    "type": "team",
+                    "archived": {
+                        "status": false
+                    },
+                    "createdAt": "2022-11-04T15:42:28.720Z",
+                    "updatedAt": "2022-11-04T15:42:28.855Z",
+                    "__v": 0,
+                    "blast": "636532e459854a1a1b37d1a8",
+                    "bucket": "636532e459854a1a1b37d1ab",
+                    "checkIn": "636532e459854a1a1b37d1a9",
+                    "groupChat": "636532e459854a1a1b37d1a7",
+                    "schedule": "636532e459854a1a1b37d1aa"
+                },
+                {
+                    "_id": "636533f23783bc1a0c2d9cab",
+                    "name": "Nanda",
+                    "desc": "Saya Coba Nih",
+                    "members": [{
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636533f23783bc1a0c2d9d1e"
+                    ],
+                    "type": "team",
+                    "archived": {
+                        "status": false
+                    },
+                    "createdAt": "2022-11-04T15:46:58.798Z",
+                    "updatedAt": "2022-11-04T15:46:58.825Z",
+                    "__v": 0,
+                    "blast": "636533f23783bc1a0c2d9d20",
+                    "bucket": "636533f23783bc1a0c2d9d23",
+                    "checkIn": "636533f23783bc1a0c2d9d21",
+                    "groupChat": "636533f23783bc1a0c2d9d1f",
+                    "schedule": "636533f23783bc1a0c2d9d22"
+                },
+                {
+                    "_id": "636534163783bc1a0c2d9d35",
+                    "name": "Malaysia",
+                    "desc": "Saya Coba Nih",
+                    "members": [{
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636534163783bc1a0c2d9da8"
+                    ],
+                    "type": "team",
+                    "archived": {
+                        "status": false
+                    },
+                    "createdAt": "2022-11-04T15:47:34.057Z",
+                    "updatedAt": "2022-11-04T15:47:34.094Z",
+                    "__v": 0,
+                    "blast": "636534163783bc1a0c2d9daa",
+                    "bucket": "636534163783bc1a0c2d9dad",
+                    "checkIn": "636534163783bc1a0c2d9dab",
+                    "groupChat": "636534163783bc1a0c2d9da9",
+                    "schedule": "636534163783bc1a0c2d9dac"
+                }]
+            },
+            "examples": [
+                [{
+                    "_id": "635367ba699bc04871c0f855",
+                    "name": "Kelas A",
+                    "desc": "",
+                    "members": [{
+                        "_id": "635001379411977405a23eda",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c",
+                        "bio": "loremipsum dolorsitssssss",
+                        "status": "Software Engineersssss"
+                    },
+                    {
+                        "_id": "62f63f5d93a55ccbaaaee181",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c",
+                        "bio": "sudah di takdirkan maha pencipta",
+                        "status": "single selamanya"
+                    },
+                    {
+                        "_id": "62f652fa98ae1e904837debf",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c",
+                        "bio": "",
+                        "status": ""
+                    },
+                    {
+                        "_id": "62f60e2ce646dee8e8cd5a65",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c",
+                        "bio": "",
+                        "status": ""
+                    },
+                    {
+                        "_id": "6214988e48c88f6184e24c76",
+                        "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c",
+                        "bio": "Mentor",
+                        "status": "Test Engineer"
+                    },
+                    {
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                        "bio": "",
+                        "status": ""
+                    },
+                    {
+                        "_id": "62f5f90d98ae1e90483795af",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "635367ba699bc04871c0f858"
+                    ],
+                    "type": "team",
+                    "archived": {
+                        "status": false
+                    },
+                    "createdAt": "2022-10-22T03:47:06.238Z",
+                    "updatedAt": "2022-10-25T09:44:01.481Z",
+                    "__v": 0,
+                    "blast": "635367ba699bc04871c0f85a",
+                    "bucket": "635367ba699bc04871c0f85d",
+                    "checkIn": "635367ba699bc04871c0f85b",
+                    "groupChat": "635367ba699bc04871c0f859",
+                    "schedule": "635367ba699bc04871c0f85c"
+                },
+                {
+                    "_id": "6354e0142e20d88b28be44a5",
+                    "name": "CLASS A",
+                    "desc": "",
+                    "members": [{
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "6354e0142e20d88b28be44a8"
+                    ],
+                    "type": "team",
+                    "archived": {
+                        "status": false
+                    },
+                    "createdAt": "2022-10-23T06:32:52.046Z",
+                    "updatedAt": "2022-10-23T06:32:52.081Z",
+                    "__v": 0,
+                    "blast": "6354e0142e20d88b28be44aa",
+                    "bucket": "6354e0142e20d88b28be44ad",
+                    "checkIn": "6354e0142e20d88b28be44ab",
+                    "groupChat": "6354e0142e20d88b28be44a9",
+                    "schedule": "6354e0142e20d88b28be44ac"
+                },
+                {
+                    "_id": "636532e459854a1a1b37d133",
+                    "name": "Nanda",
+                    "desc": "Saya Coba Nih",
+                    "members": [{
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636532e459854a1a1b37d1a6"
+                    ],
+                    "type": "team",
+                    "archived": {
+                        "status": false
+                    },
+                    "createdAt": "2022-11-04T15:42:28.720Z",
+                    "updatedAt": "2022-11-04T15:42:28.855Z",
+                    "__v": 0,
+                    "blast": "636532e459854a1a1b37d1a8",
+                    "bucket": "636532e459854a1a1b37d1ab",
+                    "checkIn": "636532e459854a1a1b37d1a9",
+                    "groupChat": "636532e459854a1a1b37d1a7",
+                    "schedule": "636532e459854a1a1b37d1aa"
+                },
+                {
+                    "_id": "636533f23783bc1a0c2d9cab",
+                    "name": "Nanda",
+                    "desc": "Saya Coba Nih",
+                    "members": [{
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636533f23783bc1a0c2d9d1e"
+                    ],
+                    "type": "team",
+                    "archived": {
+                        "status": false
+                    },
+                    "createdAt": "2022-11-04T15:46:58.798Z",
+                    "updatedAt": "2022-11-04T15:46:58.825Z",
+                    "__v": 0,
+                    "blast": "636533f23783bc1a0c2d9d20",
+                    "bucket": "636533f23783bc1a0c2d9d23",
+                    "checkIn": "636533f23783bc1a0c2d9d21",
+                    "groupChat": "636533f23783bc1a0c2d9d1f",
+                    "schedule": "636533f23783bc1a0c2d9d22"
+                },
+                {
+                    "_id": "636534163783bc1a0c2d9d35",
+                    "name": "Malaysia",
+                    "desc": "Saya Coba Nih",
+                    "members": [{
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                        "bio": "",
+                        "status": ""
+                    }],
+                    "boards": [
+                        "636534163783bc1a0c2d9da8"
+                    ],
+                    "type": "team",
+                    "archived": {
+                        "status": false
+                    },
+                    "createdAt": "2022-11-04T15:47:34.057Z",
+                    "updatedAt": "2022-11-04T15:47:34.094Z",
+                    "__v": 0,
+                    "blast": "636534163783bc1a0c2d9daa",
+                    "bucket": "636534163783bc1a0c2d9dad",
+                    "checkIn": "636534163783bc1a0c2d9dab",
+                    "groupChat": "636534163783bc1a0c2d9da9",
+                    "schedule": "636534163783bc1a0c2d9dac"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "teams": [{
+            "_id": "635367ba699bc04871c0f855",
+            "name": "Kelas A",
+            "desc": "",
+            "members": [{
+                "_id": "635001379411977405a23eda",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu26psG3sLpUkDRa9blKHR_Gu2SitSdQ1LArnaHU=s96-c",
+                "bio": "loremipsum dolorsitssssss",
+                "status": "Software Engineersssss"
+            },
+            {
+                "_id": "62f63f5d93a55ccbaaaee181",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucrnAjT3I6nzDMfohdc_LU1GY0dcaVMeXxORykNq=s96-c",
+                "bio": "sudah di takdirkan maha pencipta",
+                "status": "single selamanya"
+            },
+            {
+                "_id": "62f652fa98ae1e904837debf",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucp3YKbkexnApOshS4YCTMudD8UOWLBf2H3RCgF08w=s96-c",
+                "bio": "",
+                "status": ""
+            },
+            {
+                "_id": "62f60e2ce646dee8e8cd5a65",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AFdZucoAXeNCaxGmhR75ngyG1TL_SFrkMJIoVcAxgdbzEA=s96-c",
+                "bio": "",
+                "status": ""
+            },
+            {
+                "_id": "6214988e48c88f6184e24c76",
+                "photoUrl": "https://lh3.googleusercontent.com/a-/AOh14Gg6XtIErfNY2UhMA5QkOyoYYtx-CC_nMPl3fUnvKg=s96-c",
+                "bio": "Mentor",
+                "status": "Test Engineer"
+            },
+            {
+                "_id": "635000bc2e20d88b28b61c00",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                "bio": "",
+                "status": ""
+            },
+            {
+                "_id": "62f5f90d98ae1e90483795af",
+                "photoUrl": "https://lh3.googleusercontent.com/a/AItbvmlTIcnLWAk3Ep8xozZU48XwfoeFlYtKjoAuzrBw=s96-c",
+                "bio": "",
+                "status": ""
+            }],
+            "boards": [
+                "635367ba699bc04871c0f858"
+            ],
+            "type": "team",
+            "archived": {
+                "status": false
+            },
+            "createdAt": "2022-10-22T03:47:06.238Z",
+            "updatedAt": "2022-10-25T09:44:01.481Z",
+            "__v": 0,
+            "blast": "635367ba699bc04871c0f85a",
+            "bucket": "635367ba699bc04871c0f85d",
+            "checkIn": "635367ba699bc04871c0f85b",
+            "groupChat": "635367ba699bc04871c0f859",
+            "schedule": "635367ba699bc04871c0f85c"
+        },
+        {
+            "_id": "6354e0142e20d88b28be44a5",
+            "name": "CLASS A",
+            "desc": "",
+            "members": [{
+                "_id": "635000bc2e20d88b28b61c00",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                "bio": "",
+                "status": ""
+            }],
+            "boards": [
+                "6354e0142e20d88b28be44a8"
+            ],
+            "type": "team",
+            "archived": {
+                "status": false
+            },
+            "createdAt": "2022-10-23T06:32:52.046Z",
+            "updatedAt": "2022-10-23T06:32:52.081Z",
+            "__v": 0,
+            "blast": "6354e0142e20d88b28be44aa",
+            "bucket": "6354e0142e20d88b28be44ad",
+            "checkIn": "6354e0142e20d88b28be44ab",
+            "groupChat": "6354e0142e20d88b28be44a9",
+            "schedule": "6354e0142e20d88b28be44ac"
+        },
+        {
+            "_id": "636532e459854a1a1b37d133",
+            "name": "Nanda",
+            "desc": "Saya Coba Nih",
+            "members": [{
+                "_id": "635000bc2e20d88b28b61c00",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                "bio": "",
+                "status": ""
+            }],
+            "boards": [
+                "636532e459854a1a1b37d1a6"
+            ],
+            "type": "team",
+            "archived": {
+                "status": false
+            },
+            "createdAt": "2022-11-04T15:42:28.720Z",
+            "updatedAt": "2022-11-04T15:42:28.855Z",
+            "__v": 0,
+            "blast": "636532e459854a1a1b37d1a8",
+            "bucket": "636532e459854a1a1b37d1ab",
+            "checkIn": "636532e459854a1a1b37d1a9",
+            "groupChat": "636532e459854a1a1b37d1a7",
+            "schedule": "636532e459854a1a1b37d1aa"
+        },
+        {
+            "_id": "636533f23783bc1a0c2d9cab",
+            "name": "Nanda",
+            "desc": "Saya Coba Nih",
+            "members": [{
+                "_id": "635000bc2e20d88b28b61c00",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                "bio": "",
+                "status": ""
+            }],
+            "boards": [
+                "636533f23783bc1a0c2d9d1e"
+            ],
+            "type": "team",
+            "archived": {
+                "status": false
+            },
+            "createdAt": "2022-11-04T15:46:58.798Z",
+            "updatedAt": "2022-11-04T15:46:58.825Z",
+            "__v": 0,
+            "blast": "636533f23783bc1a0c2d9d20",
+            "bucket": "636533f23783bc1a0c2d9d23",
+            "checkIn": "636533f23783bc1a0c2d9d21",
+            "groupChat": "636533f23783bc1a0c2d9d1f",
+            "schedule": "636533f23783bc1a0c2d9d22"
+        },
+        {
+            "_id": "636534163783bc1a0c2d9d35",
+            "name": "Malaysia",
+            "desc": "Saya Coba Nih",
+            "members": [{
+                "_id": "635000bc2e20d88b28b61c00",
+                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c",
+                "bio": "",
+                "status": ""
+            }],
+            "boards": [
+                "636534163783bc1a0c2d9da8"
+            ],
+            "type": "team",
+            "archived": {
+                "status": false
+            },
+            "createdAt": "2022-11-04T15:47:34.057Z",
+            "updatedAt": "2022-11-04T15:47:34.094Z",
+            "__v": 0,
+            "blast": "636534163783bc1a0c2d9daa",
+            "bucket": "636534163783bc1a0c2d9dad",
+            "checkIn": "636534163783bc1a0c2d9dab",
+            "groupChat": "636534163783bc1a0c2d9da9",
+            "schedule": "636534163783bc1a0c2d9dac"
+        }]
+    }]
+}	

@@ -17,7 +17,7 @@ public class Common {
 
 	@Keyword
 	def int createNewUser(int age, String username, String password, String gender, int expectedStatus) {
-		def response = WS.sendRequestAndVerify(findTestObject("Object Repository/Cicle/POST Create",
+		def response = WS.sendRequestAndVerify(findTestObject("Object Repository/Cicle/CompaniesTeams/PositiveCT/POST Create",
 				["age": age, "username": username, "password": password, "gender": gender]))
 
 		def jsonResponse = jsonSlurper.parseText(response.getResponseText())
@@ -26,6 +26,6 @@ public class Common {
 
 	@Keyword
 	def static void findUserById(int id, int age, String username, String password, String gender, int expectedStatus) {
-		WS.sendRequestAndVerify(findTestObject('Object Repository/Cicle/GET all by user', [('id') : id]))
+		WS.sendRequestAndVerify(findTestObject('Object Repository/Cicle/CompaniesTeams/PositiveCT/GET all by user', [('id') : id]))
 	}
 }

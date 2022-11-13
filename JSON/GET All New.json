@@ -1,0 +1,800 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "message",
+        "groupChat"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": "",
+            "title": "The message Schema",
+            "examples": [
+                "Get group chat Detail successful"
+            ]
+        },
+        "groupChat": {
+            "type": "object",
+            "default": {},
+            "title": "The groupChat Schema",
+            "required": [
+                "_id",
+                "messages",
+                "attachments",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The _id Schema",
+                    "examples": [
+                        "636532e459854a1a1b37d1a7"
+                    ]
+                },
+                "messages": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The messages Schema",
+                    "items": {
+                        "type": "object",
+                        "title": "A Schema",
+                        "required": [
+                            "_id",
+                            "content",
+                            "creator",
+                            "isDeleted",
+                            "createdAt",
+                            "updatedAt",
+                            "__v"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "title": "The _id Schema",
+                                "examples": [
+                                    "636f19bf2b70f216bee0c225",
+                                    "636f1658d7f0fba1a52bbfff",
+                                    "636f12c8f0d9372bfbf9786b",
+                                    "636f0c45d7f0fba1a52b900f",
+                                    "636f093dd7f0fba1a52b8413",
+                                    "636f05e7d7f0fba1a52b775a",
+                                    "636f057ef0d9372bfbf9464c",
+                                    "636f052dd7f0fba1a52b75c3",
+                                    "636f04f4d7f0fba1a52b7452",
+                                    "636f04bed7f0fba1a52b72cb"
+                                ]
+                            },
+                            "content": {
+                                "type": "string",
+                                "title": "The content Schema",
+                                "examples": [
+                                    "This message was deleted",
+                                    "\u003cp\u003eIni baru chat\u003c/p\u003e",
+                                    "\u003cp\u003eIni pesan baru ya\u003c/p\u003e",
+                                    "\u003cp\u003eIni pesan baru\u003c/p\u003e",
+                                    ""
+                                ]
+                            },
+                            "creator": {
+                                "type": "object",
+                                "title": "The creator Schema",
+                                "required": [
+                                    "_id",
+                                    "fullName",
+                                    "photoUrl"
+                                ],
+                                "properties": {
+                                    "_id": {
+                                        "type": "string",
+                                        "title": "The _id Schema",
+                                        "examples": [
+                                            "635000bc2e20d88b28b61c00"
+                                        ]
+                                    },
+                                    "fullName": {
+                                        "type": "string",
+                                        "title": "The fullName Schema",
+                                        "examples": [
+                                            "Nanda Dwi Mahendra"
+                                        ]
+                                    },
+                                    "photoUrl": {
+                                        "type": "string",
+                                        "title": "The photoUrl Schema",
+                                        "examples": [
+                                            "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                        ]
+                                    }
+                                },
+                                "examples": [{
+                                    "_id": "635000bc2e20d88b28b61c00",
+                                    "fullName": "Nanda Dwi Mahendra",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                },
+                                {
+                                    "_id": "635000bc2e20d88b28b61c00",
+                                    "fullName": "Nanda Dwi Mahendra",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                },
+                                {
+                                    "_id": "635000bc2e20d88b28b61c00",
+                                    "fullName": "Nanda Dwi Mahendra",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                },
+                                {
+                                    "_id": "635000bc2e20d88b28b61c00",
+                                    "fullName": "Nanda Dwi Mahendra",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                },
+                                {
+                                    "_id": "635000bc2e20d88b28b61c00",
+                                    "fullName": "Nanda Dwi Mahendra",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                },
+                                {
+                                    "_id": "635000bc2e20d88b28b61c00",
+                                    "fullName": "Nanda Dwi Mahendra",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                },
+                                {
+                                    "_id": "635000bc2e20d88b28b61c00",
+                                    "fullName": "Nanda Dwi Mahendra",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                },
+                                {
+                                    "_id": "635000bc2e20d88b28b61c00",
+                                    "fullName": "Nanda Dwi Mahendra",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                },
+                                {
+                                    "_id": "635000bc2e20d88b28b61c00",
+                                    "fullName": "Nanda Dwi Mahendra",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                },
+                                {
+                                    "_id": "635000bc2e20d88b28b61c00",
+                                    "fullName": "Nanda Dwi Mahendra",
+                                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                                }]
+                            },
+                            "isDeleted": {
+                                "type": "boolean",
+                                "title": "The isDeleted Schema",
+                                "examples": [
+                                    true,
+                                    false
+                                ]
+                            },
+                            "createdAt": {
+                                "type": "string",
+                                "title": "The createdAt Schema",
+                                "examples": [
+                                    "2022-11-12T03:57:51.589Z",
+                                    "2022-11-12T03:43:20.147Z",
+                                    "2022-11-12T03:28:08.735Z",
+                                    "2022-11-12T03:00:21.865Z",
+                                    "2022-11-12T02:47:25.837Z",
+                                    "2022-11-12T02:33:11.464Z",
+                                    "2022-11-12T02:31:26.118Z",
+                                    "2022-11-12T02:30:05.474Z",
+                                    "2022-11-12T02:29:08.835Z",
+                                    "2022-11-12T02:28:14.097Z"
+                                ]
+                            },
+                            "updatedAt": {
+                                "type": "string",
+                                "title": "The updatedAt Schema",
+                                "examples": [
+                                    "2022-11-12T03:58:29.503Z",
+                                    "2022-11-12T03:49:03.998Z",
+                                    "2022-11-12T03:28:08.735Z",
+                                    "2022-11-12T03:00:21.865Z",
+                                    "2022-11-12T02:47:25.837Z",
+                                    "2022-11-12T02:33:11.464Z",
+                                    "2022-11-12T02:38:40.646Z",
+                                    "2022-11-12T02:30:05.474Z",
+                                    "2022-11-12T02:29:08.835Z",
+                                    "2022-11-12T02:28:14.097Z"
+                                ]
+                            },
+                            "__v": {
+                                "type": "integer",
+                                "title": "The __v Schema",
+                                "examples": [
+                                    0
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "_id": "636f19bf2b70f216bee0c225",
+                            "content": "This message was deleted",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": true,
+                            "createdAt": "2022-11-12T03:57:51.589Z",
+                            "updatedAt": "2022-11-12T03:58:29.503Z",
+                            "__v": 0,
+                            "": "2022-11-12T03:58:29.502Z"
+                        },
+                        {
+                            "_id": "636f1658d7f0fba1a52bbfff",
+                            "content": "This message was deleted",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": true,
+                            "createdAt": "2022-11-12T03:43:20.147Z",
+                            "updatedAt": "2022-11-12T03:49:03.998Z",
+                            "__v": 0,
+                            "": "2022-11-12T03:49:03.997Z"
+                        },
+                        {
+                            "_id": "636f12c8f0d9372bfbf9786b",
+                            "content": "\u003cp\u003eIni baru chat\u003c/p\u003e",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-12T03:28:08.735Z",
+                            "updatedAt": "2022-11-12T03:28:08.735Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "636f0c45d7f0fba1a52b900f",
+                            "content": "\u003cp\u003eIni pesan baru ya\u003c/p\u003e",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-12T03:00:21.865Z",
+                            "updatedAt": "2022-11-12T03:00:21.865Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "636f093dd7f0fba1a52b8413",
+                            "content": "\u003cp\u003eIni pesan baru\u003c/p\u003e",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-12T02:47:25.837Z",
+                            "updatedAt": "2022-11-12T02:47:25.837Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "636f05e7d7f0fba1a52b775a",
+                            "content": "",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-12T02:33:11.464Z",
+                            "updatedAt": "2022-11-12T02:33:11.464Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "636f057ef0d9372bfbf9464c",
+                            "content": "This message was deleted",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": true,
+                            "createdAt": "2022-11-12T02:31:26.118Z",
+                            "updatedAt": "2022-11-12T02:38:40.646Z",
+                            "__v": 0,
+                            "": "2022-11-12T02:38:40.646Z"
+                        },
+                        {
+                            "_id": "636f052dd7f0fba1a52b75c3",
+                            "content": "",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-12T02:30:05.474Z",
+                            "updatedAt": "2022-11-12T02:30:05.474Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "636f04f4d7f0fba1a52b7452",
+                            "content": "",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-12T02:29:08.835Z",
+                            "updatedAt": "2022-11-12T02:29:08.835Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "636f04bed7f0fba1a52b72cb",
+                            "content": "",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-12T02:28:14.097Z",
+                            "updatedAt": "2022-11-12T02:28:14.097Z",
+                            "__v": 0
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "_id": "636f19bf2b70f216bee0c225",
+                            "content": "This message was deleted",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": true,
+                            "createdAt": "2022-11-12T03:57:51.589Z",
+                            "updatedAt": "2022-11-12T03:58:29.503Z",
+                            "__v": 0,
+                            "": "2022-11-12T03:58:29.502Z"
+                        },
+                        {
+                            "_id": "636f1658d7f0fba1a52bbfff",
+                            "content": "This message was deleted",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": true,
+                            "createdAt": "2022-11-12T03:43:20.147Z",
+                            "updatedAt": "2022-11-12T03:49:03.998Z",
+                            "__v": 0,
+                            "": "2022-11-12T03:49:03.997Z"
+                        },
+                        {
+                            "_id": "636f12c8f0d9372bfbf9786b",
+                            "content": "\u003cp\u003eIni baru chat\u003c/p\u003e",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-12T03:28:08.735Z",
+                            "updatedAt": "2022-11-12T03:28:08.735Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "636f0c45d7f0fba1a52b900f",
+                            "content": "\u003cp\u003eIni pesan baru ya\u003c/p\u003e",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-12T03:00:21.865Z",
+                            "updatedAt": "2022-11-12T03:00:21.865Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "636f093dd7f0fba1a52b8413",
+                            "content": "\u003cp\u003eIni pesan baru\u003c/p\u003e",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-12T02:47:25.837Z",
+                            "updatedAt": "2022-11-12T02:47:25.837Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "636f05e7d7f0fba1a52b775a",
+                            "content": "",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-12T02:33:11.464Z",
+                            "updatedAt": "2022-11-12T02:33:11.464Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "636f057ef0d9372bfbf9464c",
+                            "content": "This message was deleted",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": true,
+                            "createdAt": "2022-11-12T02:31:26.118Z",
+                            "updatedAt": "2022-11-12T02:38:40.646Z",
+                            "__v": 0,
+                            "": "2022-11-12T02:38:40.646Z"
+                        },
+                        {
+                            "_id": "636f052dd7f0fba1a52b75c3",
+                            "content": "",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-12T02:30:05.474Z",
+                            "updatedAt": "2022-11-12T02:30:05.474Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "636f04f4d7f0fba1a52b7452",
+                            "content": "",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-12T02:29:08.835Z",
+                            "updatedAt": "2022-11-12T02:29:08.835Z",
+                            "__v": 0
+                        },
+                        {
+                            "_id": "636f04bed7f0fba1a52b72cb",
+                            "content": "",
+                            "creator": {
+                                "_id": "635000bc2e20d88b28b61c00",
+                                "fullName": "Nanda Dwi Mahendra",
+                                "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                            },
+                            "isDeleted": false,
+                            "createdAt": "2022-11-12T02:28:14.097Z",
+                            "updatedAt": "2022-11-12T02:28:14.097Z",
+                            "__v": 0
+                        }]
+                    ]
+                },
+                "attachments": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The attachments Schema",
+                    "items": {},
+                    "examples": [
+                        []
+                    ]
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The createdAt Schema",
+                    "examples": [
+                        "2022-11-04T15:42:28.831Z"
+                    ]
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The updatedAt Schema",
+                    "examples": [
+                        "2022-11-12T03:57:51.596Z"
+                    ]
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The __v Schema",
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "examples": [{
+                "_id": "636532e459854a1a1b37d1a7",
+                "messages": [{
+                    "_id": "636f19bf2b70f216bee0c225",
+                    "content": "This message was deleted",
+                    "creator": {
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "fullName": "Nanda Dwi Mahendra",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                    },
+                    "isDeleted": true,
+                    "createdAt": "2022-11-12T03:57:51.589Z",
+                    "updatedAt": "2022-11-12T03:58:29.503Z",
+                    "__v": 0,
+                    "": "2022-11-12T03:58:29.502Z"
+                },
+                {
+                    "_id": "636f1658d7f0fba1a52bbfff",
+                    "content": "This message was deleted",
+                    "creator": {
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "fullName": "Nanda Dwi Mahendra",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                    },
+                    "isDeleted": true,
+                    "createdAt": "2022-11-12T03:43:20.147Z",
+                    "updatedAt": "2022-11-12T03:49:03.998Z",
+                    "__v": 0,
+                    "": "2022-11-12T03:49:03.997Z"
+                },
+                {
+                    "_id": "636f12c8f0d9372bfbf9786b",
+                    "content": "\u003cp\u003eIni baru chat\u003c/p\u003e",
+                    "creator": {
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "fullName": "Nanda Dwi Mahendra",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                    },
+                    "isDeleted": false,
+                    "createdAt": "2022-11-12T03:28:08.735Z",
+                    "updatedAt": "2022-11-12T03:28:08.735Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "636f0c45d7f0fba1a52b900f",
+                    "content": "\u003cp\u003eIni pesan baru ya\u003c/p\u003e",
+                    "creator": {
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "fullName": "Nanda Dwi Mahendra",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                    },
+                    "isDeleted": false,
+                    "createdAt": "2022-11-12T03:00:21.865Z",
+                    "updatedAt": "2022-11-12T03:00:21.865Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "636f093dd7f0fba1a52b8413",
+                    "content": "\u003cp\u003eIni pesan baru\u003c/p\u003e",
+                    "creator": {
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "fullName": "Nanda Dwi Mahendra",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                    },
+                    "isDeleted": false,
+                    "createdAt": "2022-11-12T02:47:25.837Z",
+                    "updatedAt": "2022-11-12T02:47:25.837Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "636f05e7d7f0fba1a52b775a",
+                    "content": "",
+                    "creator": {
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "fullName": "Nanda Dwi Mahendra",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                    },
+                    "isDeleted": false,
+                    "createdAt": "2022-11-12T02:33:11.464Z",
+                    "updatedAt": "2022-11-12T02:33:11.464Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "636f057ef0d9372bfbf9464c",
+                    "content": "This message was deleted",
+                    "creator": {
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "fullName": "Nanda Dwi Mahendra",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                    },
+                    "isDeleted": true,
+                    "createdAt": "2022-11-12T02:31:26.118Z",
+                    "updatedAt": "2022-11-12T02:38:40.646Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "636f052dd7f0fba1a52b75c3",
+                    "content": "",
+                    "creator": {
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "fullName": "Nanda Dwi Mahendra",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                    },
+                    "isDeleted": false,
+                    "createdAt": "2022-11-12T02:30:05.474Z",
+                    "updatedAt": "2022-11-12T02:30:05.474Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "636f04f4d7f0fba1a52b7452",
+                    "content": "",
+                    "creator": {
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "fullName": "Nanda Dwi Mahendra",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                    },
+                    "isDeleted": false,
+                    "createdAt": "2022-11-12T02:29:08.835Z",
+                    "updatedAt": "2022-11-12T02:29:08.835Z",
+                    "__v": 0
+                },
+                {
+                    "_id": "636f04bed7f0fba1a52b72cb",
+                    "content": "",
+                    "creator": {
+                        "_id": "635000bc2e20d88b28b61c00",
+                        "fullName": "Nanda Dwi Mahendra",
+                        "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                    },
+                    "isDeleted": false,
+                    "createdAt": "2022-11-12T02:28:14.097Z",
+                    "updatedAt": "2022-11-12T02:28:14.097Z",
+                    "__v": 0
+                }],
+                "attachments": [],
+                "createdAt": "2022-11-04T15:42:28.831Z",
+                "updatedAt": "2022-11-12T03:57:51.596Z",
+                "__v": 0
+            }]
+        }
+    },
+    "examples": [{
+        "message": "Get group chat Detail successful",
+        "groupChat": {
+            "_id": "636532e459854a1a1b37d1a7",
+            "messages": [{
+                "_id": "636f19bf2b70f216bee0c225",
+                "content": "This message was deleted",
+                "creator": {
+                    "_id": "635000bc2e20d88b28b61c00",
+                    "fullName": "Nanda Dwi Mahendra",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                },
+                "isDeleted": true,
+                "createdAt": "2022-11-12T03:57:51.589Z",
+                "updatedAt": "2022-11-12T03:58:29.503Z",
+                "__v": 0
+            },
+            {
+                "_id": "636f1658d7f0fba1a52bbfff",
+                "content": "This message was deleted",
+                "creator": {
+                    "_id": "635000bc2e20d88b28b61c00",
+                    "fullName": "Nanda Dwi Mahendra",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                },
+                "isDeleted": true,
+                "createdAt": "2022-11-12T03:43:20.147Z",
+                "updatedAt": "2022-11-12T03:49:03.998Z",
+                "__v": 0
+            },
+            {
+                "_id": "636f12c8f0d9372bfbf9786b",
+                "content": "\u003cp\u003eIni baru chat\u003c/p\u003e",
+                "creator": {
+                    "_id": "635000bc2e20d88b28b61c00",
+                    "fullName": "Nanda Dwi Mahendra",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                },
+                "isDeleted": false,
+                "createdAt": "2022-11-12T03:28:08.735Z",
+                "updatedAt": "2022-11-12T03:28:08.735Z",
+                "__v": 0
+            },
+            {
+                "_id": "636f0c45d7f0fba1a52b900f",
+                "content": "\u003cp\u003eIni pesan baru ya\u003c/p\u003e",
+                "creator": {
+                    "_id": "635000bc2e20d88b28b61c00",
+                    "fullName": "Nanda Dwi Mahendra",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                },
+                "isDeleted": false,
+                "createdAt": "2022-11-12T03:00:21.865Z",
+                "updatedAt": "2022-11-12T03:00:21.865Z",
+                "__v": 0
+            },
+            {
+                "_id": "636f093dd7f0fba1a52b8413",
+                "content": "\u003cp\u003eIni pesan baru\u003c/p\u003e",
+                "creator": {
+                    "_id": "635000bc2e20d88b28b61c00",
+                    "fullName": "Nanda Dwi Mahendra",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                },
+                "isDeleted": false,
+                "createdAt": "2022-11-12T02:47:25.837Z",
+                "updatedAt": "2022-11-12T02:47:25.837Z",
+                "__v": 0
+            },
+            {
+                "_id": "636f05e7d7f0fba1a52b775a",
+                "content": "",
+                "creator": {
+                    "_id": "635000bc2e20d88b28b61c00",
+                    "fullName": "Nanda Dwi Mahendra",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                },
+                "isDeleted": false,
+                "createdAt": "2022-11-12T02:33:11.464Z",
+                "updatedAt": "2022-11-12T02:33:11.464Z",
+                "__v": 0
+            },
+            {
+                "_id": "636f057ef0d9372bfbf9464c",
+                "content": "This message was deleted",
+                "creator": {
+                    "_id": "635000bc2e20d88b28b61c00",
+                    "fullName": "Nanda Dwi Mahendra",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                },
+                "isDeleted": true,
+                "createdAt": "2022-11-12T02:31:26.118Z",
+                "updatedAt": "2022-11-12T02:38:40.646Z",
+                "__v": 0
+            },
+            {
+                "_id": "636f052dd7f0fba1a52b75c3",
+                "content": "",
+                "creator": {
+                    "_id": "635000bc2e20d88b28b61c00",
+                    "fullName": "Nanda Dwi Mahendra",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                },
+                "isDeleted": false,
+                "createdAt": "2022-11-12T02:30:05.474Z",
+                "updatedAt": "2022-11-12T02:30:05.474Z",
+                "__v": 0
+            },
+            {
+                "_id": "636f04f4d7f0fba1a52b7452",
+                "content": "",
+                "creator": {
+                    "_id": "635000bc2e20d88b28b61c00",
+                    "fullName": "Nanda Dwi Mahendra",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                },
+                "isDeleted": false,
+                "createdAt": "2022-11-12T02:29:08.835Z",
+                "updatedAt": "2022-11-12T02:29:08.835Z",
+                "__v": 0
+            },
+            {
+                "_id": "636f04bed7f0fba1a52b72cb",
+                "content": "",
+                "creator": {
+                    "_id": "635000bc2e20d88b28b61c00",
+                    "fullName": "Nanda Dwi Mahendra",
+                    "photoUrl": "https://lh3.googleusercontent.com/a/ALm5wu0-LlWrXjcsCDkEQiYetYJvs_MMhzEJePr83uyNxA=s96-c"
+                },
+                "isDeleted": false,
+                "createdAt": "2022-11-12T02:28:14.097Z",
+                "updatedAt": "2022-11-12T02:28:14.097Z",
+                "__v": 0
+            }],
+            "attachments": [],
+            "createdAt": "2022-11-04T15:42:28.831Z",
+            "updatedAt": "2022-11-12T03:57:51.596Z",
+            "__v": 0
+        }
+    }]
+}

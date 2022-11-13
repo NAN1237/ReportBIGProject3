@@ -1,0 +1,347 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "required": [
+        "companies",
+        "company"
+    ],
+    "properties": {
+        "companies": {
+            "type": "array",
+            "default": [],
+            "items": {
+                "type": "object",
+                "required": [
+                    "workloadCapacityDefault",
+                    "_id",
+                    "logo",
+                    "admins",
+                    "members",
+                    "teams",
+                    "name",
+                    "desc",
+                    "membersJoined",
+                    "createdAt",
+                    "updatedAt",
+                    "__v"
+                ],
+                "properties": {
+                    "workloadCapacityDefault": {
+                        "type": "object",
+                        "required": [
+                            "value",
+                            "measurement"
+                        ],
+                        "properties": {
+                            "value": {
+                                "type": "integer"
+                            },
+                            "measurement": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "_id": {
+                        "type": "string"
+                    },
+                    "logo": {
+                        "type": "string"
+                    },
+                    "admins": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "required": [
+                                "_id",
+                                "fullName",
+                                "photoUrl"
+                            ],
+                            "properties": {
+                                "_id": {
+                                    "type": "string"
+                                },
+                                "fullName": {
+                                    "type": "string"
+                                },
+                                "photoUrl": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "members": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "required": [
+                                "_id",
+                                "fullName",
+                                "photoUrl"
+                            ],
+                            "properties": {
+                                "_id": {
+                                    "type": "string"
+                                },
+                                "fullName": {
+                                    "type": "string"
+                                },
+                                "photoUrl": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "teams": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "required": [
+                                "archived",
+                                "_id",
+                                "members",
+                                "boards",
+                                "name",
+                                "desc",
+                                "type",
+                                "createdAt",
+                                "updatedAt",
+                                "__v",
+                                "blast",
+                                "bucket",
+                                "checkIn",
+                                "groupChat",
+                                "schedule"
+                            ],
+                            "properties": {
+                                "archived": {
+                                    "type": "object",
+                                    "required": [
+                                        "status"
+                                    ],
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean"
+                                        }
+                                    }
+                                },
+                                "_id": {
+                                    "type": "string"
+                                },
+                                "members": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "required": [
+                                            "_id",
+                                            "photoUrl"
+                                        ],
+                                        "properties": {
+                                            "_id": {
+                                                "type": "string"
+                                            },
+                                            "photoUrl": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "boards": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "desc": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "string"
+                                },
+                                "createdAt": {
+                                    "type": "string"
+                                },
+                                "updatedAt": {
+                                    "type": "string"
+                                },
+                                "__v": {
+                                    "type": "integer"
+                                },
+                                "blast": {
+                                    "type": "string"
+                                },
+                                "bucket": {
+                                    "type": "string"
+                                },
+                                "checkIn": {
+                                    "type": "string"
+                                },
+                                "groupChat": {
+                                    "type": "string"
+                                },
+                                "schedule": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "desc": {
+                        "type": "string"
+                    },
+                    "membersJoined": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "required": [
+                                "_id",
+                                "member",
+                                "joinedAt"
+                            ],
+                            "properties": {
+                                "_id": {
+                                    "type": "string"
+                                },
+                                "member": {
+                                    "type": "string"
+                                },
+                                "joinedAt": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    },
+                    "__v": {
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        "company": {
+            "type": "object",
+            "default": {},
+            "required": [
+                "workloadCapacityDefault",
+                "_id",
+                "name",
+                "desc",
+                "logo",
+                "admins",
+                "membersJoined",
+                "members",
+                "teams",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "workloadCapacityDefault": {
+                    "type": "object",
+                    "default": {},
+                    "required": [
+                        "value",
+                        "measurement"
+                    ],
+                    "properties": {
+                        "value": {
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "measurement": {
+                            "type": "string",
+                            "default": ""
+                        }
+                    }
+                },
+                "_id": {
+                    "type": "string",
+                    "default": ""
+                },
+                "name": {
+                    "type": "string",
+                    "default": ""
+                },
+                "desc": {
+                    "type": "string",
+                    "default": ""
+                },
+                "logo": {
+                    "type": "string",
+                    "default": ""
+                },
+                "admins": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "string",
+                        "default": ""
+                    }
+                },
+                "membersJoined": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "required": [
+                            "member",
+                            "joinedAt",
+                            "_id"
+                        ],
+                        "properties": {
+                            "member": {
+                                "type": "string",
+                                "default": ""
+                            },
+                            "joinedAt": {
+                                "type": "string",
+                                "default": ""
+                            },
+                            "_id": {
+                                "type": "string",
+                                "default": ""
+                            }
+                        }
+                    }
+                },
+                "members": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "string",
+                        "default": ""
+                    }
+                },
+                "teams": {
+                    "type": "array",
+                    "default": [],
+                    "items": {}
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": ""
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": ""
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0
+                }
+            }
+        }
+    }
+}
