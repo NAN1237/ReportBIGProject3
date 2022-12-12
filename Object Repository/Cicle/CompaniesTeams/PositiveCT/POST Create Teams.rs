@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;data\&quot;: {\n        \&quot;desc\&quot;: \&quot;Saya Coba Nih\&quot;,\n        \&quot;name\&quot;: \&quot;Valencia\&quot;,\n        \&quot;type\&quot;: \&quot;team\&quot;\n    },\n    \&quot;selector\&quot;: {\n        \&quot;companyId\&quot;: \&quot;61eba2c85080f47b25ddc8f8\&quot;\n    }\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;data\&quot;: {\n        \&quot;desc\&quot;: \&quot;Saya Coba Nih\&quot;,\n        \&quot;name\&quot;: \&quot;Barcelona\&quot;,\n        \&quot;type\&quot;: \&quot;team\&quot;\n    },\n    \&quot;selector\&quot;: {\n        \&quot;companyId\&quot;: \&quot;61eba2c85080f47b25ddc8f8\&quot;\n    }\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
